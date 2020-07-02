@@ -23,5 +23,5 @@
         python main.py
   
 - To `end/quit` Chat session in the `client-side` terminal, type `quit` and `enter`
-- To `end/quit` Server session` in the `server-side` terminal, use `ctrl + c`
+- To `end/quit` Server session in the `server-side` terminal, use `ctrl + c`
      
