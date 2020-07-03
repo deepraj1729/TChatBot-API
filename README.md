@@ -1,5 +1,8 @@
 # TChatBot-API
-#### A Flask REST API to serve our trained ChatBot using Tensorflow Serving
+A `Flask REST API` to serve trained `ChatBots` using `Tensorflow Serving` and `Docker containers`
+
+# Architecture of the Application:
+![architecture](architecture.png)
 
 # Usage:
 - Create a virtual environment
