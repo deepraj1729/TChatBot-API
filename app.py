@@ -42,7 +42,6 @@ def chat_output():
     #Loop to randomly choose a reply for the corresonding tag
     for i in range(len(intents)):
         if intents[i]["tag"] == tag:
-            print("\nOutput tag: {}\n".format(tag))
             responses = intents[i]["responses"]
             reply = np.random.choice(responses, 1, replace=False)[0]  
             
