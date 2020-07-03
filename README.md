@@ -1,5 +1,5 @@
 # TChatBot-API
-A `Flask REST API` to serve trained `ChatBots` using `Tensorflow Serving` and `Docker containers`
+A `Flask REST API` service to serve trained `ChatBots` using `Tensorflow Serving` and `Docker containers`
 
 # Architecture of the Application:
 ![architecture](architecture.png)
