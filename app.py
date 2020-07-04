@@ -1,10 +1,13 @@
 from flask import Flask,request,jsonify
-app = Flask(__name__) 
 from funcs import getClasses,bagOfWords,load_JSON,ProcessData
 from pathlib import Path
 import numpy as np
 from model import get_prediction
 import os
+from flask_cors import CORS
+
+app = Flask(__name__) 
+CORS(app)
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 root = Path(dir_path)
@@ -47,7 +50,9 @@ def chat_output():
             
     result={"reply":reply}
 
-    return jsonify(result)
+    response = jsonify(result)
+    # response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 if __name__ == "__main__":
     app.run(port=8000,debug=False)
